@@ -4,13 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/brython@3.13.0/brython.min.js">
+    </script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/brython@3.13.0/brython_stdlib.js">
+    </script>
 </head>
 <body>
     Hello there
     I've updated this amazing website
     <button id="button">CLick me</button>
-    <script>
-        window.button.addEventListener("click", () => window.alert("Hacked you"))
+
+    <script type="text/python">
+import browser
+
+def my_function():
+    print("Hello world")
+    print("Hacked again")
+
+browser.window.button.onClick(my_function)
     </script>
 </body>
 </html>
